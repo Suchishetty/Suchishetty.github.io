@@ -1,27 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suchitha's Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Suchitha</h1>
-    <p>Computer Science Engineering Student | Full Stack Developer | AWS Enthusiast</p>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Suchitha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="bg-primary text-white text-center py-5 mt-5">
+    <div class="container">
+      <h1>Hi, I'm Suchitha</h1>
+      <p class="lead">Computer Science Engineering Student | Full Stack Developer | AWS Enthusiast</p>
+      <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+    </div>
   </header>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/BudgetBuddy">BudgetBuddy</a></li>
-      <li><a href="https://github.com/yourusername/Fake-news-detector">Fake News Detector</a></li>
-    </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Skills</h2>
+      <span class="badge bg-info mx-1">Django</span>
+      <span class="badge bg-success mx-1">AWS</span>
+      <span class="badge bg-dark mx-1">GitHub</span>
+      <span class="badge bg-warning mx-1">Bootstrap</span>
+      <span class="badge bg-secondary mx-1">Node.js</span>
+    </div>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: yourmail@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername">Profile</a></p>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="budgetbuddy.png" class="card-img-top" alt="BudgetBuddy Screenshot">
+            <div class="card-body">
+              <h5 class="card-title">BudgetBuddy</h5>
+              <p class="card-text">Expense tracker with clean UI and responsive design.</p>
+              <a href="https://github.com/yourusername/BudgetBuddy" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="fakenews.png" class="card-img-top" alt="Fake News Detector Screenshot">
+            <div class="card-body">
+              <h5 class="card-title">Fake News Detector</h5>
+              <p class="card-text">ML-based text classification project.</p>
+              <a href="https://github.com/yourusername/Fake-news-detector" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Contact</h2>
+      <a href="mailto:yourmail@example.com" class="mx-3"><i class="fas fa-envelope fa-2x"></i></a>
+      <a href="https://linkedin.com/in/yourusername" class="mx-3"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/yourusername" class="mx-3"><i class="fab fa-github fa-2x"></i></a>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
